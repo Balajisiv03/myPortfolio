@@ -1,6 +1,6 @@
+import AboutPage from "./components/AboutPage";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Techstack from "./components/Techstack";
@@ -17,7 +17,7 @@ const App = () => {
 
       <div className="container mx-auto px-8">
         <Navbar />
-        <Hero />
+        <AboutPage />
         <Techstack />
         <Projects />
         <Experience />
