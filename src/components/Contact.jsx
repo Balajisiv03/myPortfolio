@@ -2,8 +2,8 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
   FaArrowUp,
+  FaPhone,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
@@ -116,34 +116,22 @@ const Contact = () => {
           >
             Send Message
           </button>
-        </form>
-
-        <div className="mt-16 text-center border-t border-stone-500 pt-8 text-stone-400">
-          <div className="text-lg mb-6">
+          <div className="text-lg text-center">
+            <p className="text-center mb-5">or</p>
             <p>
-              <strong>Email: </strong>
+              <span className="text-gray-300">Prefer email? Reach me at </span>
               <a
                 href="mailto:balajisivakumar2003@gmail.com"
-                className="text-blue-400 hover:underline"
+                className="text-blue-400 hover:underline text-sm md:text-xl lg:text-xl transition-all duration-300 ease-in-out hover:text-blue-500"
               >
                 balajisivakumar2003@gmail.com
               </a>
             </p>
-
-            <p className="flex flex-wrap justify-center items-center gap-4">
-              <strong>Phone: +917358388433</strong>
-              <strong>Chennai, India</strong>
-            </p>
           </div>
+        </form>
 
-          <p className="mb-2 text-lg">
-            © {new Date().getFullYear()} React & TailwindCSS Portfolio.Balaji-S
-          </p>
-          <p className="mb-6 text-sm">
-            Developed by Balaji-S, a passionate full-stack developer crafting
-            digital experiences.
-          </p>
-
+        <div className="mt-16 text-center border-t border-stone-500 pt-8 text-stone-400">
+          <p className="mb-6 text-sm">Designed & Developed by Balaji-S</p>
           <div className="flex justify-center gap-6 text-2xl text-stone-400">
             <motion.a
               href="https://github.com/Balajisiv03"
@@ -180,17 +168,14 @@ const Contact = () => {
             >
               <FaInstagram />
             </motion.a>
-
             <motion.a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
+              href="tel:+917358388433"
+              aria-label="Call"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               className="hover:text-white transition-colors duration-200"
             >
-              <FaTwitter />
+              <FaPhone />
             </motion.a>
             <button
               onClick={scrollToTop}

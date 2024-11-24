@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { useState } from "react";
@@ -143,21 +143,12 @@ const Navbar = () => {
           >
             <FaInstagram />
           </a>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-            className="hover:text-blue-400"
-          >
-            <FaTwitter />
-          </a>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-0 left-0 w-1/2 bg-black bg-opacity-60 text-white p-6 rounded-md shadow-lg">
+        <div className="lg:hidden absolute top-0 left-0 w-1/3 bg-black bg-opacity-60 text-white p-6 rounded-md shadow-lg">
           <Link
             to="about"
             smooth={true}
@@ -230,15 +221,6 @@ const Navbar = () => {
               className="hover:text-blue-400"
             >
               <FaInstagram />
-            </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="hover:text-blue-400"
-            >
-              <FaTwitter />
             </a>
           </div>
         </div>

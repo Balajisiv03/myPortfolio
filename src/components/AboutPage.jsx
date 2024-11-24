@@ -112,7 +112,8 @@ const AboutPage = () => {
                 variants={childvariants}
                 className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent hidden sm:block"
               >
-                Full Stack Developer
+                <span className="text-blue-100">Full Stack</span>{" "}
+                <span>Developer</span>
               </motion.span>
               <motion.p
                 variants={childvariants}

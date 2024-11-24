@@ -37,14 +37,16 @@ const Experience = () => {
               </span>
             </h3>
             <p className="mb-4 text-stone-400">{EXPERIENCES.description}</p>
-            {EXPERIENCES.technologies.map((tech, index) => (
-              <span
-                key={index}
-                className="mr-2 mt-4 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-stone-300"
-              >
-                {tech}
-              </span>
-            ))}
+            <div className="flex flex-wrap gap-2">
+              {EXPERIENCES.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="mr-2 mt-4 rounded bg-stone-900 px-2 py-1 text-sm font-medium text-stone-300"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
